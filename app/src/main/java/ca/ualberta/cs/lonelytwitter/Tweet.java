@@ -17,6 +17,10 @@ public abstract class Tweet implements Tweetable {
         this.message = message;
         this.date = date;
     }
+    @Override
+    public String toString() {
+        return date.toString() + " | " + message;
+    }
 
     public void setDate(Date date){
         this.date = date;
